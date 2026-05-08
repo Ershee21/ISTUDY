@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Login — Study Guide</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+  <main class="login-wrap">
+    <form id="loginForm" class="login-form" autocomplete="off">
+      <h1>WELCOME!</h1>
+      <label for="username">Username</label>
+      <input id="username" name="username" required autocomplete="username">
+
+      <label for="password">Password</label>
+      <input id="password" type="password" name="password" required autocomplete="current-password">
+
+      <div class="login-actions">
+        <button type="submit" id="loginBtn">Log in</button>
+        <button type="button" id="registerBtn">Register</button>
+      </div>
+
+      <p id="message" class="login-message" aria-live="polite"></p>
+    </form>
+    <p class="login-footer">Or <a href="study.html">Continue as guest</a></p>
+  </main>
+
+  <script src="js/login.js"></script>
+</body>
+</html>
+

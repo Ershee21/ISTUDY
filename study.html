@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Study Guide</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/study.css">
+</head>
+<body>
+  <header class="sg-header">
+    <h1>Study Guide</h1>
+    <nav class="sg-nav">
+      <button id="newSubjectBtn">+ New Subject</button>
+      <button id="exportBtn">Export</button>
+      <button id="importBtn">Import</button>
+      <input id="importFile" type="file" accept="application/json" style="display:none">
+    </nav>
+  </header>
+
+  <div class="sg-layout">
+    <aside class="sg-sidebar">
+      <h2>Subjects</h2>
+      <ul id="subjectList"></ul>
+    </aside>
+
+    <main class="sg-main">
+      <div class="sg-controls">
+        <button id="addNoteBtn">Add Note</button>
+        <button id="addCardBtn">Add Flashcard</button>
+      </div>
+      <section id="contentArea">
+        <p class="placeholder">Select or create a subject to begin.</p>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/study.js"></script>
+</body>
+</html>
+
